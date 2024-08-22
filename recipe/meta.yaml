@@ -27,7 +27,7 @@ requirements:
 
 test:
   imports:
-    - asdfghjkl
+    - asdl
   commands:
     - pip check
   requires:
