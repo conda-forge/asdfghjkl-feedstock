@@ -1,5 +1,5 @@
 {% set name = "asdfghjkl" %}
-{% set version = "0.1a2" %}
+{% set version = "0.1a4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/asdfghjkl-{{ version }}.tar.gz
-  sha256: 731bde1b4f19f2a370a9b284a06fd64bb897fb1beec2d8c5a8b7fa36b34e9f98
+  sha256: a934411a0ffdee6fcdccb19672196498ea6a8e55e3e67abbe67200c84b46ddee
 
 build:
   number: 0
@@ -17,7 +17,7 @@ build:
 
 requirements:
   build:
-    - sysroot_linux-64 ==2.17                # [linux64]
+    - {{ stdlib("c") }}
   host:
     - pip
     - python >=3.6
@@ -27,7 +27,7 @@ requirements:
 
 test:
   imports:
-    - asdfghjkl
+    - asdl
   commands:
     - pip check
   requires:
