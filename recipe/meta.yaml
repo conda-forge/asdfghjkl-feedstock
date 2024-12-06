@@ -1,5 +1,5 @@
 {% set name = "asdfghjkl" %}
-{% set version = "0.1a4" %}
+{% set version = "0.1a5" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/asdfghjkl-{{ version }}.tar.gz
-  sha256: a934411a0ffdee6fcdccb19672196498ea6a8e55e3e67abbe67200c84b46ddee
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/asdfghjkl-{{ version }}.tar.gz
+  sha256: 02d268093bfa804132b9405266f2c3b27ffda27000b47251b31de299b13d0da8
 
 build:
   number: 0
