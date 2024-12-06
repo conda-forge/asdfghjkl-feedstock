@@ -20,9 +20,10 @@ requirements:
     - {{ stdlib("c") }}
   host:
     - pip
-    - python >=3.6
+    - setuptools
+    - python {{ python_min }}
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - pytorch >=1.9.0
 
 test:
